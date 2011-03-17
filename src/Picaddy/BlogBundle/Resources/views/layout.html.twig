@@ -1,0 +1,35 @@
+{% extends "::base.html.twig" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/picaddy/css/blog.css') }}" media="screen" />
+{% endblock %}
+
+{% block body %}
+    <div id="container">
+        <header class="clearfix">
+            <h1>
+                symfony2 Blog Tutorial
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="{{ path('show', { 'page' : 'about' }) }}">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            {% block content %}No content.{% endblock %}
+        </div>
+        <footer class="clearfix">
+            <p class="symfony2">
+                Powered by <a href="http://www.symfony.com" target="_blank">symfony2</a>
+            </p>
+            <p class="copy">
+                &copy; Company 2011
+            </p>
+        </footer>
+    </div>
+{% endblock %}

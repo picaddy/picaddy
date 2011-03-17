@@ -1,0 +1,7 @@
+show:
+    pattern:  /{page}
+    defaults: { _controller: PicaddyBlogBundle:Pages:show }
+
+home:
+    pattern:  /
+    defaults: { _controller: PicaddyBlogBundle:Blog:index }

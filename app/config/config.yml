@@ -38,7 +38,7 @@ doctrine:
     orm:
         auto_generate_proxy_classes: %kernel.debug%
         mappings:
-            PicaddyHelloBundle: ~
+            PicaddyBlogBundle: ~
 
 # Swiftmailer Configuration
 swiftmailer:

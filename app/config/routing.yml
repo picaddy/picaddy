@@ -1,4 +1,2 @@
-homepage:
-    pattern:  /
-    defaults: { _controller: PicaddyHelloBundle:Hello:index }
-
+Blog:
+    resource:  "@PicaddyBlogBundle/Resources/config/routing.yml"
